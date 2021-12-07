@@ -1,6 +1,6 @@
 ﻿namespace Laba4
 {
-    partial class frmProc
+    partial class frmProc2_1
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Laba4
 {
-    public partial class frmProc : Form
+    public partial class frmProc2_1 : Form
     {
-        public frmProc()
+        public frmProc2_1()
         {
             InitializeComponent();
         }

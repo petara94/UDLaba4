@@ -19,7 +19,7 @@ namespace Laba4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new frmProc().Show();
+            new frmProc2_1().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
