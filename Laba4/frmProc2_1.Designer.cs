@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
-            this.command2_1 = new System.Data.SqlClient.SqlCommand();
+            this.sqlCommand1 = new System.Data.SqlClient.SqlCommand();
             this.txt_res = new System.Windows.Forms.RichTextBox();
             this.txt_group = new System.Windows.Forms.TextBox();
             this.txt_stud = new System.Windows.Forms.TextBox();
@@ -45,22 +45,23 @@
     "ue";
             this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
             // 
-            // command2_1
+            // sqlCommand1
             // 
-            this.command2_1.CommandText = "proc2_1";
-            this.command2_1.CommandType = System.Data.CommandType.StoredProcedure;
-            this.command2_1.Connection = this.sqlConnection1;
-            this.command2_1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
-            new System.Data.SqlClient.SqlParameter("@stud_fam", System.Data.SqlDbType.VarChar),
-            new System.Data.SqlClient.SqlParameter("@newgroup", System.Data.SqlDbType.VarChar),
+            this.sqlCommand1.CommandText = "proc2_1";
+            this.sqlCommand1.CommandType = System.Data.CommandType.StoredProcedure;
+            this.sqlCommand1.Connection = this.sqlConnection1;
+            this.sqlCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
+            new System.Data.SqlClient.SqlParameter("@stud_fam", System.Data.SqlDbType.VarChar, 20),
+            new System.Data.SqlClient.SqlParameter("@newgroup", System.Data.SqlDbType.VarChar, 20),
             new System.Data.SqlClient.SqlParameter("@res", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Output, false, ((byte)(0)), ((byte)(0)), "", System.Data.DataRowVersion.Current, null)});
             // 
             // txt_res
             // 
-            this.txt_res.Location = new System.Drawing.Point(12, 99);
+            this.txt_res.Location = new System.Drawing.Point(14, 101);
+            this.txt_res.Margin = new System.Windows.Forms.Padding(5);
             this.txt_res.Name = "txt_res";
             this.txt_res.ReadOnly = true;
-            this.txt_res.Size = new System.Drawing.Size(360, 90);
+            this.txt_res.Size = new System.Drawing.Size(356, 86);
             this.txt_res.TabIndex = 0;
             this.txt_res.Text = "";
             // 
@@ -115,11 +116,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // frmProc
+            // frmProc2_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(384, 201);
             this.Controls.Add(this.button1);
@@ -129,7 +129,7 @@
             this.Controls.Add(this.txt_stud);
             this.Controls.Add(this.txt_group);
             this.Controls.Add(this.txt_res);
-            this.Name = "frmProc";
+            this.Name = "frmProc2_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProc2_1";
             this.ResumeLayout(false);
@@ -140,7 +140,7 @@
         #endregion
 
         private System.Data.SqlClient.SqlConnection sqlConnection1;
-        private System.Data.SqlClient.SqlCommand command2_1;
+        private System.Data.SqlClient.SqlCommand sqlCommand1;
         private System.Windows.Forms.RichTextBox txt_res;
         private System.Windows.Forms.TextBox txt_group;
         private System.Windows.Forms.TextBox txt_stud;
