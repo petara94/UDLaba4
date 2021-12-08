@@ -29,17 +29,17 @@ namespace Laba4
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            new frmFunc2_3().Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            new frmFunc2_4().Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            new frmInd().Show();
         }
     }
 }

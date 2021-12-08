@@ -52,6 +52,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFunc2_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFunc2_3.Designer.cs">
+      <DependentUpon>frmFunc2_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFunc2_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFunc2_4.Designer.cs">
+      <DependentUpon>frmFunc2_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInd.Designer.cs">
+      <DependentUpon>frmInd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProc2_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +86,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFunc2_3.resx">
+      <DependentUpon>frmFunc2_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFunc2_4.resx">
+      <DependentUpon>frmFunc2_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInd.resx">
+      <DependentUpon>frmInd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProc2_1.resx">
       <DependentUpon>frmProc2_1.cs</DependentUpon>
